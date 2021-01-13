@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InventoryManagementSystem">
-        <activity android:name=".ViewEmployeeActivity"></activity>
+        <activity android:name=".ViewProductActivity"></activity>
+        <activity android:name=".ViewEmployeeActivity" />
         <activity android:name=".ViewSupplierActivity" />
         <activity android:name=".ViewAdminActivity" />
         <activity android:name=".ManageProductActivity" />

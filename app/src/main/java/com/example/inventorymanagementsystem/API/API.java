@@ -74,7 +74,14 @@ public interface API {
     @GET("api/admin/deleteSupplier/{user_ID}")
     Call<String>DeleteEmployee(@Path("user_ID")int id);                           //Delete Employee
 
+    @GET("api/product/viewProductDetails/{id}")
+    Call<User> ViewProductUser(@Path("user_ID") int id);                     //View Product Details
 
+    @POST("api/product/updateProduct")
+    Call<String>saveProduct(@Body Product product);                           //Update Product Details
+
+    @GET("api/product/deleteProduct/{id}")
+    Call<String>deleteProduct(@Path("id")int id);                           //Delete Product Details
 
 
 
