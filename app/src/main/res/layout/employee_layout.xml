@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="455dp"
+    android:layout_height="278dp"
+    android:layout_marginLeft="7dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginRight="15dp"
+    android:background="#DF7171"
+    android:backgroundTint="#D5ECED"
+    app:cardMaxElevation="10dp"
+    app:cardCornerRadius="15dp"
+    android:layout_marginBottom="7dp">
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="172dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/employee_icn" />
+
+    <TextView
+        android:id="@+id/manage_employee_id"
+        android:layout_width="235dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="serif-monospace"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#100F0F"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/manage_employee_name"
+        android:layout_width="235dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="65dp"
+        android:fontFamily="serif-monospace"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/manage_employee_phoneNumber"
+        android:layout_width="235dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="115dp"
+        android:fontFamily="serif-monospace"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/manage_employee_nic"
+        android:layout_width="235dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="165dp"
+        android:fontFamily="serif-monospace"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/manage_employee_type"
+        android:layout_width="176dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="serif-monospace"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/employee_view"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="235dp"
+        android:background="#9FD363"
+        android:fontFamily="serif-monospace"
+        android:text="View" />
+
+    <Button
+        android:id="@+id/employee_delete"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="235dp"
+        android:background="#EA617A"
+        android:fontFamily="serif-monospace"
+        android:text="Delete" />
+
+
+</androidx.cardview.widget.CardView>
+
