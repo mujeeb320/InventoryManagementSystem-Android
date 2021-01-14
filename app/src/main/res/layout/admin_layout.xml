@@ -25,7 +25,7 @@
         android:layout_height="50dp"
         android:layout_marginLeft="210dp"
         android:layout_marginTop="15dp"
-        android:fontFamily="serif-monospace"
+                android:fontFamily="casual"
         android:text="TextView"
         android:textAlignment="center"
         android:textColor="#100F0F"
@@ -38,7 +38,7 @@
         android:layout_height="50dp"
         android:layout_marginLeft="210dp"
         android:layout_marginTop="65dp"
-        android:fontFamily="serif-monospace"
+                android:fontFamily="casual"
         android:text="TextView"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -52,7 +52,7 @@
         android:layout_height="31dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="200dp"
-        android:fontFamily="serif-monospace"
+                android:fontFamily="casual"
         android:text="TextView"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -68,7 +68,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="235dp"
         android:background="#9FD363"
-        android:fontFamily="serif-monospace"
+                android:fontFamily="casual"
         android:text="Edit" />
 
     <Button
@@ -78,7 +78,7 @@
         android:layout_marginLeft="250dp"
         android:layout_marginTop="235dp"
         android:background="#EA617A"
-        android:fontFamily="serif-monospace"
+                android:fontFamily="casual"
         android:text="Delete" />
 
 </androidx.cardview.widget.CardView>
