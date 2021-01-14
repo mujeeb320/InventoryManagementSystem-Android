@@ -91,6 +91,7 @@ public class ViewSupplierActivity extends AppCompatActivity {
                 public void onResponse(Call<User> call, Response<User> response) {
                     User user = response.body();
                     viewUser = user;
+
                     id.setText(Integer.toString(user.getUserID()));
                     firstName.setText(user.getFirstName());
                     lastName.setText(user.getLastName());

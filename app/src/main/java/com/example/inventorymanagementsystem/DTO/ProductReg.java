@@ -1,5 +1,7 @@
 package com.example.inventorymanagementsystem.DTO;
 
+import com.example.inventorymanagementsystem.Entity.Product;
+
 public class ProductReg {
 
     private int id;
@@ -7,7 +9,15 @@ public class ProductReg {
     private int quantity;
     private double price;
 
+
     public ProductReg() {
+    }
+
+    public ProductReg(int id, String name, int quantity, double price) {
+        this.id = id;
+        this.name = name;
+        this.quantity = quantity;
+        this.price = price;
     }
 
     public int getId() {

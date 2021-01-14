@@ -19,6 +19,7 @@ import com.example.inventorymanagementsystem.Entity.Product;
 import com.example.inventorymanagementsystem.Entity.Supplier;
 import com.example.inventorymanagementsystem.R;
 import com.example.inventorymanagementsystem.ViewAdminActivity;
+import com.example.inventorymanagementsystem.ViewProductActivity;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -81,8 +82,8 @@ public class ProductViewAdapter extends RecyclerView.Adapter<ProductViewAdapter.
         holder.editBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Intent intent = new Intent(context, ViewAdminActivity.class);
-                intent.putExtra("user_ID", Integer.toString(product.getId()));
+                final Intent intent = new Intent(context, ViewProductActivity.class);
+                intent.putExtra("product_ID", Integer.toString(product.getId()));
                 context.startActivity(intent);
             }
         });

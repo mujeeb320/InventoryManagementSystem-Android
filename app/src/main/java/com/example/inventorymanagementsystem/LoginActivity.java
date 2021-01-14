@@ -79,7 +79,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getBaseContext(), ManageEmployeeActivity.class);
+                Intent intent = new Intent(getBaseContext(), ManageProductActivity.class);
                 startActivity(intent);
             }
         });

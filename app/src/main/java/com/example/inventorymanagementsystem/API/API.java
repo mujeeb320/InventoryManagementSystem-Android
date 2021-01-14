@@ -2,6 +2,7 @@ package com.example.inventorymanagementsystem.API;
 
 import com.example.inventorymanagementsystem.DTO.AdminReg;
 import com.example.inventorymanagementsystem.DTO.EmployeeReg;
+import com.example.inventorymanagementsystem.DTO.ProductReg;
 import com.example.inventorymanagementsystem.DTO.SupplierReg;
 import com.example.inventorymanagementsystem.Entity.Admin;
 import com.example.inventorymanagementsystem.Entity.Employee;
@@ -75,15 +76,16 @@ public interface API {
     Call<String>DeleteEmployee(@Path("user_ID")int id);                           //Delete Employee
 
     @GET("api/product/viewProductDetails/{id}")
-    Call<User> ViewProductUser(@Path("user_ID") int id);                     //View Product Details
+    Call<Product> ViewProductDetails(@Path("id") int id);                     //View Product Details
 
     @POST("api/product/updateProduct")
-    Call<String>saveProduct(@Body Product product);                           //Update Product Details
+    Call<String>updateProduct(@Body Product product);                           //Update Product Details
 
     @GET("api/product/deleteProduct/{id}")
     Call<String>deleteProduct(@Path("id")int id);                           //Delete Product Details
 
-
+    @POST("api/product/saveProduct")
+    Call<String> saveProduct(@Body ProductReg productReg);               //Register Product
 
 
 
