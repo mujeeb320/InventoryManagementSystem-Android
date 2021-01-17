@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 
 public class AdminHomepageActivity extends AppCompatActivity {
 
-    ImageView viewadmin, viewemployee, viewsupplier, addadmin, addsupplier, addemployee, viewproduct;
+    ImageView viewadmin, viewemployee, viewsupplier, addadmin, addsupplier, addemployee, viewproduct, logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,17 @@ public class AdminHomepageActivity extends AppCompatActivity {
         addsupplier=(ImageView) findViewById(R.id.add_supplier_icon);
         addemployee=(ImageView) findViewById(R.id.add_Employee_icon);
         viewproduct=(ImageView) findViewById(R.id.view_product_icon);
+        logout=(ImageView) findViewById(R.id.logout);
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminHomepageActivity.this, LoginActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         viewadmin.setOnClickListener(new View.OnClickListener() {
             @Override

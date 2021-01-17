@@ -7,9 +7,16 @@
     tools:context=".AdminHomepageActivity"
     android:background="@drawable/loginbg">
 
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="70dp"
+        android:layout_marginLeft="350dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logout"></ImageView>
+
     <TextView
         android:id="@+id/dashboard_slogan"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -270,5 +277,5 @@
             android:textStyle="bold" />
 
     </LinearLayout>
-    
+
 </RelativeLayout>

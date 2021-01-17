@@ -64,7 +64,7 @@
         android:orientation="horizontal"
         android:fontFamily="casual">
 
-        <com.rey.material.widget.CheckBox
+        <CheckBox
             android:id="@+id/remember_me"
             style="@style/Material.Drawable.CheckBox"
             android:layout_width="wrap_content"
