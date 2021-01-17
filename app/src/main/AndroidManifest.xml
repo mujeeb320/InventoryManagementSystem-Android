@@ -11,7 +11,7 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.InventoryManagementSystem">
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity android:name=".RegisterProductActivity"></activity>
         <activity android:name=".ViewProductActivity" />
         <activity android:name=".ViewEmployeeActivity" />
@@ -21,9 +21,6 @@
         <activity android:name=".RegisterEmployeeActivity" />
         <activity android:name=".RegisterAdminActivity" />
         <activity android:name=".RegisterSupplierActivity" />
-        <activity
-            android:name=".ui.login.LoginActivity2"
-            android:label="@string/title_activity_login2" />
         <activity android:name=".SupplierHomepageActivity" />
         <activity android:name=".EmployeeHomepageActivity" />
         <activity android:name=".AdminHomepageActivity" />

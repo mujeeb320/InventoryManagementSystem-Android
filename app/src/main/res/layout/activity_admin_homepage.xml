@@ -1,9 +1,274 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdminHomepageActivity">
+    tools:context=".AdminHomepageActivity"
+    android:background="@drawable/loginbg">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/dashboard_slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/black"
+        android:text="Admin Home"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/catergory_Linear_Layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dashboard_slogan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/view_admin_icon"
+            android:layout_width="86dp"
+            android:layout_height="88dp"
+            android:src="@drawable/administrator"></ImageView>
+
+        <TextView
+            android:id="@+id/view_admin_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dashboard_slogan"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"
+            android:text="View Admin"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/catergory_Linear_Layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/catergory_Linear_Layout1"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/view_employee_icon"
+            android:layout_width="86dp"
+            android:layout_height="88dp"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/employee">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/view_employee_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/view_admin_text"
+            android:layout_marginTop="0dp"
+            android:text="View Employees"
+            android:textAlignment="center"
+            android:layout_marginLeft="15dp"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/catergory_Linear_Layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/catergory_Linear_Layout2"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/view_supplier_icon"
+            android:layout_width="86dp"
+            android:layout_height="88dp"
+            android:src="@drawable/customer"
+            android:layout_marginLeft="45dp"
+
+            />
+        <TextView
+            android:id="@+id/view_supplier_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/view_employee_text"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="15dp"
+            android:text="View Suppliers"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/catergory_Linear_Layout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/catergory_Linear_Layout3"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/add_admin_icon"
+            android:layout_width="86dp"
+            android:layout_height="88dp"
+            android:src="@drawable/administrator"
+            android:layout_marginRight="6dp"
+
+            />
+        <TextView
+            android:id="@+id/add_admin_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/view_supplier_text"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="15dp"
+
+            android:text="Add Admin"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/catergory_Linear_Layout5"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_below="@+id/catergory_Linear_Layout4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/add_Employee_icon"
+            android:layout_width="86dp"
+            android:layout_height="88dp"
+            android:layout_marginLeft="38dp"
+            android:src="@drawable/employee"
+
+            />
+
+        <TextView
+            android:id="@+id/add_employee_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_af_text"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"
+            android:text="Add Employee"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/catergory_Linear_Layout6"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_below="@+id/catergory_Linear_Layout5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/add_supplier_icon"
+            android:layout_width="86dp"
+            android:layout_height="88dp"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/customer"
+
+            />
+
+        <TextView
+            android:id="@+id/add_supplier_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_employee_text"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"
+            android:text="Add Supplier"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/catergory_Linear_Layout7"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/catergory_Linear_Layout6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/view_product_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/box"
+
+            />
+
+        <TextView
+            android:id="@+id/view_product_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_employee_text"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="0dp"
+            android:text="View Products"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    
+</RelativeLayout>

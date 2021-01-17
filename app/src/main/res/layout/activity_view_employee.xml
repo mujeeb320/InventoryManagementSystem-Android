@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
     tools:context=".ViewEmployeeActivity">
 
     <TextView
@@ -13,10 +14,10 @@
         android:layout_marginStart="118dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="117dp"
-                android:fontFamily="casual"
+        android:fontFamily="casual"
         android:text="Edit User Details"
         android:textAlignment="center"
-        android:textColor="#FF5722"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,24 +26,24 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="369dp"
-        android:layout_height="476dp"
+        android:layout_height="506dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="185dp"
-        android:backgroundTint="#E6CDCD"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="7dp"
+        android:backgroundTint="#E8E1E1"
         app:cardCornerRadius="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/update_employee_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="47dp"
             android:layout_marginTop="10dp"
-                    android:fontFamily="casual"
+            android:fontFamily="casual"
             android:text="User ID"
             android:textAlignment="center"
             android:textColor="#131313"
@@ -54,10 +55,9 @@
             android:layout_width="match_parent"
             android:layout_height="47dp"
             android:layout_marginTop="60dp"
-                    android:fontFamily="casual"
-            android:text="TextView"
+            android:fontFamily="casual"
             android:textAlignment="center"
-            android:textColor="#0E60DA"
+            android:textColor="#428bca"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -66,7 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="47dp"
             android:layout_marginTop="100dp"
-                    android:fontFamily="casual"
+            android:fontFamily="casual"
             android:text="First Name"
             android:textAlignment="center"
             android:textColor="#151515"
@@ -79,11 +79,11 @@
             android:layout_height="47dp"
             android:layout_marginTop="130dp"
             android:ems="10"
-                    android:fontFamily="casual"
+            android:fontFamily="casual"
             android:inputType="textPersonName"
-            android:text="Name"
+            android:text="first name"
             android:textAlignment="center"
-            android:textColor="#E3431B"
+            android:textColor="#428bca"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -92,7 +92,7 @@
             android:layout_width="match_parent"
             android:layout_height="47dp"
             android:layout_marginTop="180dp"
-                    android:fontFamily="casual"
+            android:fontFamily="casual"
             android:text="Last Name"
             android:textAlignment="center"
             android:textColor="#151515"
@@ -105,25 +105,25 @@
             android:layout_height="47dp"
             android:layout_marginTop="210dp"
             android:ems="10"
-                    android:fontFamily="casual"
+            android:fontFamily="casual"
             android:inputType="textPersonName"
             android:text="Name"
             android:textAlignment="center"
-            android:textColor="#E3431B"
+            android:textColor="#428bca"
             android:textSize="24sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="match_parent"
             android:layout_height="47dp"
             android:layout_marginTop="260dp"
-                    android:fontFamily="casual"
+            android:fontFamily="casual"
             android:text="Address"
             android:textAlignment="center"
             android:textColor="#151515"
             android:textSize="24sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/view_employee_address"
@@ -131,11 +131,11 @@
             android:layout_height="47dp"
             android:layout_marginTop="290dp"
             android:ems="10"
-                    android:fontFamily="casual"
+            android:fontFamily="casual"
             android:inputType="text"
             android:text="Address"
             android:textAlignment="center"
-            android:textColor="#E3431B"
+            android:textColor="#428bca"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -144,12 +144,12 @@
             android:layout_width="match_parent"
             android:layout_height="47dp"
             android:layout_marginTop="340dp"
-                    android:fontFamily="casual"
+            android:fontFamily="casual"
             android:text="Phone Number"
             android:textAlignment="center"
             android:textColor="#151515"
             android:textSize="24sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/view_employee_phone_number"
@@ -157,24 +157,25 @@
             android:layout_height="47dp"
             android:layout_marginTop="380dp"
             android:ems="10"
-                    android:fontFamily="casual"
+            android:fontFamily="casual"
             android:inputType="text"
             android:text="Number"
             android:textAlignment="center"
-            android:textColor="#E3431B"
+            android:textColor="#428bca"
             android:textSize="24sp"
             android:textStyle="bold" />
+
         <TextView
             android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="47dp"
             android:layout_marginTop="420dp"
-                    android:fontFamily="casual"
+            android:fontFamily="casual"
             android:text="NIC"
             android:textAlignment="center"
             android:textColor="#151515"
             android:textSize="24sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/view_employee_nic"
@@ -182,11 +183,11 @@
             android:layout_height="47dp"
             android:layout_marginTop="460dp"
             android:ems="10"
-                    android:fontFamily="casual"
+            android:fontFamily="casual"
             android:inputType="text"
             android:text="Number"
             android:textAlignment="center"
-            android:textColor="#E3431B"
+            android:textColor="#428bca"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -202,17 +203,17 @@
         android:layout_marginTop="600dp"
         android:layout_marginEnd="149dp"
         android:layout_marginBottom="103dp"
-        android:backgroundTint="#8DD5EA"
-                android:fontFamily="casual"
+        android:backgroundTint="#428bca"
+        android:fontFamily="casual"
         android:text="Update"
-        android:textColor="#EC5252"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

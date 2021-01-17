@@ -9,12 +9,12 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/manage_Product_recycler"
-        android:layout_width="470dp"
-        android:layout_height="745dp"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="207dp"
+        android:layout_marginTop="280dp"
         android:layout_marginEnd="15dp"
-        android:layout_marginBottom="98dp"
+        android:layout_marginBottom="260dp"
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

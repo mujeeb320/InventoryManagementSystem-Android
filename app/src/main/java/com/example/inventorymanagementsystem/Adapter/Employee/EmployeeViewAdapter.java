@@ -76,6 +76,7 @@ public class EmployeeViewAdapter extends RecyclerView.Adapter<EmployeeViewAdapte
         holder.name.setText(employee.getFirstName() + " " + employee.getLastName());
         holder.type.setText("Employee");
         holder.phoneNumber.setText(employee.getPhoneNumber());
+        holder.nic.setText(employee.getNIC());
 
         holder.viewBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,7 +120,7 @@ public class EmployeeViewAdapter extends RecyclerView.Adapter<EmployeeViewAdapte
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView id, name, type, phoneNumber;
+        TextView id, name, type, phoneNumber,nic;
         Button viewBtn, deleteBtn;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -127,6 +128,7 @@ public class EmployeeViewAdapter extends RecyclerView.Adapter<EmployeeViewAdapte
             name = itemView.findViewById(R.id.manage_employee_name);
             phoneNumber = itemView.findViewById(R.id.manage_employee_phoneNumber);
             type = itemView.findViewById(R.id.manage_employee_type);
+            nic=itemView.findViewById(R.id.manage_employee_nic);
             viewBtn = itemView.findViewById(R.id.employee_view);
             deleteBtn = itemView.findViewById(R.id.employee_delete);
         }
